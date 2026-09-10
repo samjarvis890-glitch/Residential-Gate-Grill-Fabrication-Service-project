@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="hdBg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#EBE7DE"/><stop offset="100%" stop-color="#D7D0C3"/></linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#hdBg)"/>
+  <!-- Welcoming Residence Entrance Pathway -->
+  <polygon points="180,180 420,180 500,400 100,400" fill="#CEC7BA"/>
+  <!-- Stepping Stones -->
+  <rect x="230" y="220" width="140" height="24" rx="3" fill="#E8E3DA"/>
+  <rect x="210" y="270" width="180" height="28" rx="3" fill="#E8E3DA"/>
+  <rect x="180" y="330" width="240" height="34" rx="3" fill="#E8E3DA"/>
+  <!-- Open Welcoming Pedestrian Gate & Warm Light -->
+  <rect x="180" y="80" width="110" height="130" fill="#202124"/>
+  <rect x="310" y="80" width="110" height="130" fill="#202124"/>
+  <rect x="200" y="100" width="70" height="90" fill="#34373A"/>
+  <rect x="330" y="100" width="70" height="90" fill="#34373A"/>
+  <!-- Lantern Glow -->
+  <circle cx="295" cy="70" r="14" fill="#FCE8D1"/>
+  <polygon points="260,180 330,180 295,70" fill="#FCE8D1" opacity="0.25"/>
+</svg>

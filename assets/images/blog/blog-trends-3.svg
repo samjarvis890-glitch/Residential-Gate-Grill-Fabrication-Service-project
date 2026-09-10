@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <rect width="500" height="350" fill="#EAE5DC"/>
+  <rect x="40" y="40" width="420" height="270" rx="4" fill="#202124"/>
+  <!-- Tall vertical metal fins -->
+  <g fill="#2D3035">
+    <rect x="70" y="60" width="10" height="230"/>
+    <rect x="95" y="60" width="10" height="230"/>
+    <rect x="120" y="60" width="10" height="230"/>
+    <rect x="145" y="60" width="10" height="230"/>
+    <rect x="170" y="60" width="10" height="230"/>
+    <rect x="195" y="60" width="10" height="230"/>
+    <rect x="220" y="60" width="10" height="230"/>
+    <rect x="245" y="60" width="10" height="230"/>
+    <rect x="270" y="60" width="10" height="230"/>
+    <rect x="295" y="60" width="10" height="230"/>
+    <rect x="320" y="60" width="10" height="230"/>
+    <rect x="345" y="60" width="10" height="230"/>
+    <rect x="370" y="60" width="10" height="230"/>
+    <rect x="395" y="60" width="10" height="230"/>
+    <rect x="420" y="60" width="10" height="230"/>
+  </g>
+  <rect x="60" y="160" width="380" height="6" fill="#B47A45"/>
+</svg>

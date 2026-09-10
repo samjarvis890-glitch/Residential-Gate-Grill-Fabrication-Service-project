@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <defs><linearGradient id="msB" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2D3035"/><stop offset="100%" stop-color="#181A1D"/></linearGradient></defs>
+  <rect width="500" height="350" fill="#EBE7DE"/>
+  <rect x="50" y="40" width="400" height="270" rx="6" fill="url(#msB)"/>
+  <rect x="70" y="60" width="360" height="230" fill="none" stroke="#3A3D42" stroke-width="3"/>
+  <rect x="100" y="90" width="300" height="8" fill="#B47A45"/>
+  <text x="250" y="240" font-family="'Poppins', sans-serif" font-size="20" font-weight="700" fill="#F4F3F0" text-anchor="middle">MILD STEEL (MS)</text>
+  <text x="250" y="265" font-family="'Inter', sans-serif" font-size="12" fill="#B8B9BB" text-anchor="middle">Deep Structural Form • High Expressiveness</text>
+</svg>

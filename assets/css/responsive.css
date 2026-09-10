@@ -1,0 +1,2020 @@
+/* ==================================================
+   FORGENEST — RESPONSIVE STYLESHEET
+   Tested for 1440px, 1366px, 1280px, 1200px, 1024px, 992px, 768px, 600px, 480px, 375px, 320px
+   ================================================== */
+
+/* --- Screens at and below 1280px (Tablet & Mobile Header Collapse) --- */
+@media (max-width: 1280px) {
+  /* Collapse Desktop Navigation into Hamburger */
+  .desktop-nav {
+    display: none !important;
+  }
+
+  /* Header Bar: Logo on Left | Dark Mode + RTL + Hamburger on Right */
+  .header-actions .btn-nav-cta {
+    display: none !important;
+  }
+  .header-actions .icon-btn {
+    display: inline-flex !important;
+  }
+
+  .hamburger-btn {
+    display: flex !important;
+  }
+
+  /* Hero Section Adjustment */
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 36px;
+  }
+
+  /* 5-Card Product Grid Adjustment for Medium Desktop/Large Tablet */
+  .products-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .products-grid .product-card:nth-child(4),
+  .products-grid .product-card:nth-child(5) {
+    grid-column: span 1;
+  }
+
+  /* Gallery Grid Adjustment */
+  .gallery-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-auto-rows: 220px;
+    gap: 18px;
+  }
+  .gallery-item-1 { grid-column: span 6; grid-row: span 2; }
+  .gallery-item-2 { grid-column: span 3; grid-row: span 1; }
+  .gallery-item-3 { grid-column: span 3; grid-row: span 1; }
+  .gallery-item-4 { grid-column: span 2; grid-row: span 1; }
+  .gallery-item-5 { grid-column: span 2; grid-row: span 1; }
+  .gallery-item-6 { grid-column: span 2; grid-row: span 1; }
+
+  /* Footer Adjustment */
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 28px;
+  }
+  .footer-col-services {
+    display: block;
+  }
+}
+
+/* --- Screens up to 1024px (Standard Tablets) --- */
+@media (max-width: 1024px) {
+  .section {
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+
+  .hero-section {
+    padding: 50px 0 85px;
+    min-height: auto;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-trust {
+    justify-content: center;
+  }
+
+  .hero-img-frame {
+    aspect-ratio: 16 / 10;
+  }
+
+  /* Floating Benefits */
+  .floating-benefits-wrapper {
+    margin-top: -40px;
+  }
+  .benefits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .benefit-item:nth-child(2) {
+    border-right: none;
+  }
+  .benefit-item:nth-child(1),
+  .benefit-item:nth-child(2) {
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Split Sections: Intro, Materials, Featured */
+  .intro-grid,
+  .materials-split-grid,
+  .featured-split-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .intro-content,
+  .materials-content,
+  .featured-content {
+    text-align: center;
+  }
+
+  .intro-content p,
+  .materials-content p,
+  .featured-content p {
+    margin-inline: auto;
+  }
+
+  .intro-feature-list {
+    align-items: center;
+  }
+
+  .intro-content .section-cta,
+  .materials-content .section-cta,
+  .featured-content .section-cta {
+    justify-content: center;
+  }
+
+  .intro-img-wrapper,
+  .materials-img-wrapper,
+  .featured-img-frame {
+    aspect-ratio: 16 / 10;
+  }
+
+  /* Projects & Styles & Pricing (2-column grids) */
+  .projects-grid,
+  .styles-grid,
+  .pricing-grid,
+  .drivers-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  /* Products Grid (2 columns on tablet) */
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .products-grid .product-card:last-child {
+    grid-column: span 2;
+  }
+
+  /* Why ForgeNest */
+  .why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  /* How It Works Timeline */
+  .timeline-track {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .step-badge {
+    width: 58px;
+    height: 58px;
+    font-size: 0.9375rem;
+  }
+  .step-title {
+    font-size: 0.8125rem;
+  }
+
+  /* Testimonials Grid */
+  .testimonials-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+  .testimonials-grid .testimonial-card:last-child {
+    grid-column: span 2;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+
+/* --- Screens up to 768px (Small Tablets & Mobile) --- */
+@media (max-width: 768px) {
+  .container {
+    width: min(100% - 32px, 1360px);
+  }
+
+  .section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .section-header {
+    margin-bottom: 36px;
+  }
+
+  .section-title {
+    font-size: 1.85rem;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 36px 0 64px;
+  }
+  .hero-title {
+    font-size: clamp(2rem, 7.5vw, 2.6rem);
+  }
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 28px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+  }
+  .hero-actions .btn {
+    width: min(100%, 360px);
+  }
+
+  .hero-trust {
+    font-size: 0.8125rem;
+    gap: 8px;
+  }
+
+  /* Floating Benefits */
+  .floating-benefits-wrapper {
+    margin-top: -24px;
+    margin-bottom: 12px;
+  }
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .benefit-item {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 22px 18px;
+  }
+  .benefit-item:last-child {
+    border-bottom: none;
+  }
+
+  /* Grids Stack to 1 Column */
+  .projects-grid,
+  .products-grid,
+  .styles-grid,
+  .pricing-grid,
+  .drivers-grid,
+  .why-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .products-grid .product-card:last-child,
+  .testimonials-grid .testimonial-card:last-child {
+    grid-column: auto;
+  }
+
+  /* Gallery on Mobile - Natural clear images */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 220px;
+    gap: 16px;
+  }
+  .gallery-item-1,
+  .gallery-item-2,
+  .gallery-item-3,
+  .gallery-item-4,
+  .gallery-item-5,
+  .gallery-item-6 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .gallery-overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(23, 25, 27, 0.75) 0%, transparent 60%);
+  }
+
+  /* Timeline on Mobile: Vertical Stack */
+  .timeline-track {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-left: 16px;
+  }
+  .timeline-track::before {
+    top: 0;
+    bottom: 0;
+    left: 44px;
+    right: auto;
+    width: 2px;
+    height: 100%;
+  }
+  .timeline-step {
+    flex-direction: row;
+    text-align: left;
+    gap: 18px;
+    padding: 0;
+  }
+  .step-badge {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+  .step-info {
+    flex: 1;
+  }
+
+  /* Featured Specs Grid */
+  .specs-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* CTA Groups on Mobile */
+  .cta-group {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+  }
+  .cta-group .btn {
+    width: min(100%, 340px);
+  }
+
+  .cta-banner-content {
+    padding: 48px 20px;
+  }
+  .cta-banner-actions {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+  }
+  .cta-banner-actions .btn {
+    width: min(100%, 340px);
+  }
+
+  .final-cta-actions {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+  }
+  .final-cta-actions .btn {
+    width: min(100%, 340px);
+  }
+
+  /* FAQ */
+  .faq-header {
+    padding: 16px 18px;
+    font-size: 0.95rem;
+  }
+  .faq-content {
+    padding: 0 18px 18px;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* --- Small Mobile Phones (480px, 375px, 320px) --- */
+@media (max-width: 480px) {
+  .site-header {
+    height: 68px;
+  }
+  .brand-logo img {
+    height: 34px;
+  }
+  .hamburger-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .mobile-drawer {
+    width: 100%;
+    max-width: 100vw;
+  }
+}
+
+/* ==================================================
+   HOME 2 RESPONSIVE ADJUSTMENTS
+   ================================================== */
+
+@media (max-width: 1199px) {
+  .style-character-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pricing-factors-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .process-vertical-track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .home2-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  .home2-hero-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home2-hero-actions {
+    justify-content: center;
+  }
+  .home2-hero-meta {
+    justify-content: center;
+  }
+  .home2-hero-image-wrap {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .art-entrance-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .art-entrance-media {
+    max-width: 540px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-story-row {
+    grid-template-columns: 1fr;
+  }
+  .product-story-row.reverse .product-story-media {
+    order: 0;
+  }
+  .product-story-row.reverse .product-story-body {
+    order: 0;
+  }
+  .product-story-media {
+    min-height: 280px;
+  }
+  .product-story-body {
+    padding: 32px 24px;
+  }
+
+  .craftsmanship-split-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .material-columns-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .homeowner-questions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .homeowner-questions-grid .question-card:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  .featured-story-banner {
+    grid-template-columns: 1fr;
+  }
+  .featured-story-image {
+    min-height: 300px;
+  }
+
+  .inspiration-strip-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .why-custom-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .art-entrance-pillars {
+    grid-template-columns: 1fr;
+  }
+  .style-character-grid {
+    grid-template-columns: 1fr;
+  }
+  .craft-images-pair {
+    grid-template-columns: 1fr;
+  }
+  .craft-standards-list {
+    grid-template-columns: 1fr;
+  }
+  .homeowner-questions-grid {
+    grid-template-columns: 1fr;
+  }
+  .homeowner-questions-grid .question-card:nth-child(5) {
+    grid-column: span 1;
+  }
+  .inspiration-strip-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .process-vertical-track {
+    grid-template-columns: 1fr;
+  }
+  .pricing-factors-grid {
+    grid-template-columns: 1fr;
+  }
+  .single-quote-card {
+    padding: 36px 20px;
+  }
+  .featured-story-info {
+    padding: 36px 20px;
+  }
+  .featured-story-specs {
+    grid-template-columns: 1fr;
+  }
+  .why-custom-card-wrap {
+    padding: 36px 20px;
+  }
+  .final-cta-content {
+    padding: 40px 18px;
+  }
+}
+
+/* ==================================================
+   ABOUT PAGE RESPONSIVE ADJUSTMENTS
+   ================================================== */
+
+@media (max-width: 1199px) {
+  .about-approach-track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-standards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+  .about-hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-hero-actions {
+    justify-content: center;
+  }
+  .about-hero-media {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .about-story-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-story-media {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .about-craft-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-craft-media {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .about-material-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-focus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-custom-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-custom-media {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .about-audience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-consultation-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-consultation-media {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .about-image-story-wrap {
+    padding: 32px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-story-highlights {
+    grid-template-columns: 1fr;
+  }
+  .about-approach-track {
+    grid-template-columns: 1fr;
+  }
+  .about-focus-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-standards-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-custom-pillars {
+    grid-template-columns: 1fr;
+  }
+  .about-audience-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-consult-steps {
+    grid-template-columns: 1fr;
+  }
+  .about-belief-wrap {
+    padding: 36px 20px;
+  }
+}
+
+/* ==================================================
+   PRODUCTS PAGE RESPONSIVE ADJUSTMENTS
+   ================================================== */
+
+@media (max-width: 1199px) {
+  .product-cards-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-cards-grid-3 .product-showcase-card:nth-child(3) {
+    grid-column: span 2;
+  }
+  .railing-strip-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .design-lang-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .custom-factors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .how-choose-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .product-editorial-grid,
+  .product-editorial-grid.reverse {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .product-editorial-grid.reverse .product-main-media {
+    order: 0;
+  }
+  .product-editorial-grid.reverse .product-editorial-info {
+    order: 0;
+  }
+  .product-main-media {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .compound-info-grid {
+    grid-template-columns: 1fr;
+  }
+  .material-guide-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-featured-panel {
+    padding: 36px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-category-nav {
+    justify-content: flex-start;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .product-cards-grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .product-cards-grid-3 .product-showcase-card:nth-child(3) {
+    grid-column: span 1;
+  }
+  .railing-strip-grid {
+    grid-template-columns: 1fr;
+  }
+  .design-lang-grid {
+    grid-template-columns: 1fr;
+  }
+  .custom-factors-grid {
+    grid-template-columns: 1fr;
+  }
+  .how-choose-grid {
+    grid-template-columns: 1fr;
+  }
+  .comparison-table {
+    font-size: 0.8125rem;
+  }
+  .comparison-table th,
+  .comparison-table td {
+    padding: 12px 14px;
+  }
+}
+
+/* ==================================================
+   DESIGN GALLERY RESPONSIVE ADJUSTMENTS
+   ================================================== */
+
+@media (max-width: 1199px) {
+  .gallery-masonry-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .gallery-grid-item.span-wide {
+    grid-column: span 2;
+  }
+  .gallery-grid-item.span-tall {
+    grid-row: span 1;
+  }
+  .gallery-grid-item.span-tall .gallery-img-box {
+    height: 280px;
+  }
+  .styles-quad-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .gallery-inspire-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .details-quad-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gallery-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+  .intro-heading-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-stats-row {
+    justify-content: center;
+  }
+  .featured-story-card {
+    grid-template-columns: 1fr;
+  }
+  .story-image-wrap {
+    min-height: 300px;
+  }
+  .story-content-wrap {
+    padding: 30px 24px;
+  }
+  .compound-inspire-box {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 28px;
+  }
+  .gallery-tri-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-hero-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .gallery-controls-wrapper {
+    padding: 18px 16px;
+  }
+  .filter-group-block {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .filter-group-label {
+    min-width: auto;
+  }
+  .filter-buttons-scroll {
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 6px;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  .reset-filter-btn {
+    margin-left: 0;
+  }
+  .gallery-masonry-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .gallery-grid-item.span-wide {
+    grid-column: span 1;
+  }
+  .styles-quad-grid,
+  .gallery-inspire-grid,
+  .gallery-tri-grid,
+  .gallery-split-showcase,
+  .details-quad-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .compound-features-grid,
+  .story-specs-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .hero-badge-overlay {
+    bottom: 14px;
+    left: 14px;
+    right: 14px;
+    padding: 10px 14px;
+  }
+  .reference-banner {
+    padding: 36px 20px;
+  }
+  .reference-perks,
+  .cta-trust-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .gallery-lightbox {
+    padding: 12px;
+  }
+  .lightbox-image-wrap {
+    height: 340px;
+  }
+  .lightbox-caption-bar {
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .lightbox-cta-wrap {
+    width: 100%;
+    margin-left: 0;
+  }
+  .lightbox-cta-wrap .btn {
+    width: 100%;
+  }
+}
+
+/* ==================================================
+   MATERIALS PAGE RESPONSIVE ADJUSTMENTS
+   ================================================== */
+
+@media (max-width: 1199px) {
+  .materials-palette-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  .materials-palette-grid .palette-card:nth-child(4),
+  .materials-palette-grid .palette-card:nth-child(5) {
+    grid-column: span 1;
+  }
+  .finishes-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  .mat-styles-quad-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .detail-masonry-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .materials-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .material-story-container,
+  .material-story-container.reverse {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .material-story-container.reverse .material-story-media {
+    order: 1;
+  }
+  .material-story-container.reverse .material-story-text {
+    order: 2;
+  }
+  .wall-pairings-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .decision-result-box {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    text-align: center;
+  }
+  .materials-palette-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .materials-palette-grid .palette-card:last-child {
+    grid-column: span 2;
+  }
+}
+
+/* ==================================================
+   MATERIALS STUDIO RESPONSIVE RULES
+   ================================================== */
+
+@media (max-width: 1024px) {
+  .mat-hero-grid,
+  .mat-switcher-card,
+  .mat-story-grid-2col,
+  .mat-story-grid-2col.reverse,
+  .mat-arch-split {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .mat-switch-img-box {
+    min-height: 320px;
+  }
+  .texture-lab-strip,
+  .mat-moodboard-grid,
+  .mat-details-grid,
+  .mat-lookbook-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mat-index-row {
+    grid-template-columns: 60px 1.2fr 1.6fr 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mat-editorial-hero {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .mat-index-row {
+    grid-template-columns: 50px 1fr 30px;
+    row-gap: 6px;
+    padding: 18px 12px;
+  }
+  .mat-index-desc {
+    grid-column: 2 / -1;
+    font-size: 0.84375rem;
+  }
+  .ss-duo-frame,
+  .mat-horiz-trio,
+  .moodboard-item,
+  .arch-collage-grid,
+  .style-guidance-grid,
+  .decision-display-card,
+  .before-choose-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .texture-lab-strip,
+  .mat-moodboard-grid,
+  .mat-details-grid,
+  .mat-lookbook-grid {
+    grid-template-columns: 1fr;
+  }
+  .mat-switch-body,
+  .mat-style-selector-box,
+  .mat-decision-wrap {
+    padding: 24px 18px;
+  }
+  .mat-switch-specs {
+    grid-template-columns: 1fr;
+  }
+  .mat-typo-trio {
+    gap: 16px;
+    justify-content: center;
+  }
+}
+
+
+/* ==================================================
+   DESIGN GALLERY EDITORIAL RESPONSIVE RULES
+   ================================================== */
+
+@media (max-width: 1024px) {
+  .editorial-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .editorial-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .story-split-container {
+    grid-template-columns: 1fr;
+  }
+  .story-main-image-wrap {
+    min-height: 320px;
+  }
+  .gates-hero-display {
+    grid-template-columns: 1fr;
+  }
+  .gates-hero-side {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .details-8-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .inspire-strip-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .story-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .direction-specs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .story-duo-grid {
+    grid-template-columns: 1fr;
+  }
+  .story-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+  .gates-hero-side {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .details-8-grid {
+    grid-template-columns: 1fr;
+  }
+  .inspire-strip-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .direction-dynamic-card {
+    padding: 24px 20px;
+  }
+  .gallery-hero-meta-strip {
+    justify-content: center;
+  }
+}
+
+
+/* ==================================================
+   PRICING GUIDE RESPONSIVE RULES
+   ================================================== */
+
+@media (max-width: 1199px) {
+  .pricing-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .pricing-hero-content {
+    max-width: 100%;
+  }
+  .pricing-hero-media {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .factors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mat-budget-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .process-steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .compare-criteria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .service-pricing-row,
+  .service-pricing-row.reverse {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 24px;
+  }
+  .service-pricing-media {
+    max-width: 100%;
+  }
+  .measurement-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .measurement-media {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .tiers-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pricing-vary-item {
+    grid-template-columns: 60px 1fr;
+    gap: 16px;
+  }
+  .pricing-vary-desc {
+    grid-column: 2 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-hero-section,
+  .pricing-vary-section,
+  .pricing-factors-section,
+  .pricing-services-section,
+  .pricing-mat-budget-section,
+  .pricing-tiers-section,
+  .pricing-checklist-section,
+  .pricing-compare-section,
+  .pricing-brief-builder-section,
+  .pricing-measurement-section,
+  .pricing-process-section,
+  .pricing-questions-section,
+  .pricing-faq-section,
+  .pricing-cta-section,
+  .pricing-final-cta-section {
+    padding: 60px 0;
+  }
+  .factors-grid {
+    grid-template-columns: 1fr;
+  }
+  .mat-budget-grid {
+    grid-template-columns: 1fr;
+  }
+  .quotation-checklist-grid {
+    grid-template-columns: 1fr;
+  }
+  .compare-criteria-grid {
+    grid-template-columns: 1fr;
+  }
+  .process-steps-grid {
+    grid-template-columns: 1fr;
+  }
+  .question-numbered-item {
+    grid-template-columns: 50px 1fr;
+    gap: 16px;
+  }
+  .brief-builder-container {
+    padding: 24px 18px;
+  }
+  .brief-result-details {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .brief-options-grid {
+    gap: 8px;
+  }
+  .brief-option-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ==================================================
+   TESTIMONIALS RESPONSIVE RULES
+   ================================================== */
+
+@media (max-width: 1199px) {
+  .hero-editorial-split {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+  .featured-story-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+  .service-strip-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .story-detail-box {
+    grid-template-columns: 1fr 1.1fr;
+    gap: 36px;
+  }
+  .trust-pillars-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-editorial-split {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .hero-editorial-text {
+    align-items: center;
+    text-align: center;
+  }
+  .hero-editorial-desc {
+    margin: 0 auto 28px;
+  }
+  .hero-editorial-media {
+    max-width: 680px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .trust-editorial-words {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .trust-word-divider {
+    width: 60px;
+    height: 1px;
+    margin: 0 auto;
+  }
+  .featured-story-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .featured-story-media {
+    min-height: 340px;
+    height: 340px;
+  }
+  .featured-story-content {
+    padding: 40px 32px;
+  }
+  .editorial-story-row,
+  .editorial-story-row.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 0;
+  }
+  .editorial-story-row.reverse > * {
+    direction: ltr;
+  }
+  .editorial-story-media {
+    min-height: 300px;
+    height: 300px;
+  }
+  .editorial-story-content {
+    padding: 36px 28px;
+  }
+  .quote-wall-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .notice-item-row {
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    padding: 20px 24px;
+  }
+  .experience-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .journey-timeline {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    padding-left: 0;
+  }
+  .story-detail-box {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .story-detail-media {
+    min-height: 320px;
+    height: 320px;
+  }
+  .story-detail-info {
+    padding: 36px 28px;
+  }
+  .transform-journey-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .trust-pillars-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-hero-section,
+  .trust-statement-section,
+  .featured-story-section,
+  .homeowner-stories-section,
+  .quote-wall-section,
+  .notice-principles-section,
+  .project-journey-section,
+  .service-strip-section,
+  .story-detail-section,
+  .transformation-section,
+  .trust-details-section,
+  .faq-accordion-section,
+  .editorial-cta-section,
+  .editorial-final-cta {
+    padding: 60px 0;
+  }
+  .editorial-filter-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .editorial-filter-links {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+  }
+  .editorial-filter-status {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .quote-wall-grid {
+    grid-template-columns: 1fr;
+  }
+  .service-strip-grid {
+    grid-template-columns: 1fr;
+  }
+  .story-detail-grid {
+    grid-template-columns: 1fr;
+  }
+  .transform-journey-grid {
+    grid-template-columns: 1fr;
+  }
+  .trust-pillars-row {
+    grid-template-columns: 1fr;
+  }
+  .experience-pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .journey-timeline {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .notice-item-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 20px 18px;
+  }
+  .notice-num {
+    font-size: 1.6rem;
+  }
+  .featured-story-meta-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .editorial-story-meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .journey-timeline {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .featured-story-quote-mark {
+    font-size: 3rem;
+  }
+  .featured-story-quote-text {
+    font-size: 1.1rem;
+  }
+  .editorial-story-quote {
+    font-size: 1.1rem;
+  }
+  .quote-wall-block {
+    padding: 24px 20px;
+  }
+  .trust-pillar-item {
+    padding: 22px 18px;
+  }
+}
+
+/* ==================================================
+   JOURNAL / BLOG RESPONSIVE ADAPTATIONS
+   ================================================== */
+@media (max-width: 1024px) {
+  .featured-article-card {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .featured-article-body {
+    padding: 32px 28px;
+  }
+  .journal-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .journal-story-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .journal-collection-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .article-item-wide {
+    grid-column: span 2;
+    grid-template-columns: 1fr;
+  }
+  .article-item-medium,
+  .article-item-half,
+  .article-item-third {
+    grid-column: span 1;
+  }
+  .blog-archive-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .playbooks-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .material-notes-grid,
+  .design-directions-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .guide-steps-grid,
+  .reading-collection-grid,
+  .gallery-connect-collage {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-archive-grid,
+  .playbooks-grid,
+  .material-notes-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .journal-collection-grid {
+    grid-template-columns: 1fr;
+  }
+  .article-item-wide,
+  .article-item-medium,
+  .article-item-half,
+  .article-item-third {
+    grid-column: span 1;
+  }
+  .design-directions-grid,
+  .guide-steps-grid,
+  .reading-collection-grid,
+  .gallery-connect-collage {
+    grid-template-columns: 1fr;
+  }
+  .journal-story-bullets {
+    grid-template-columns: 1fr;
+  }
+  .popular-read-row {
+    grid-template-columns: 36px 1fr 24px;
+    gap: 12px;
+    padding: 16px 10px;
+  }
+  .popular-read-cat {
+    display: block;
+    margin-bottom: 4px;
+  }
+  .popular-read-time {
+    display: none;
+  }
+  .newsletter-form {
+    flex-direction: column;
+  }
+  .newsletter-form .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-article-body {
+    padding: 24px 18px;
+  }
+  .article-item-body {
+    padding: 20px 16px;
+  }
+  .material-note-body,
+  .design-direction-body,
+  .guide-step-item,
+  .reading-card-body {
+    padding: 22px 18px;
+  }
+  .journal-topic-desc {
+    padding-left: 0;
+    margin-top: 6px;
+  }
+}
+
+/* ==================================================
+   CONTACT PAGE RESPONSIVE ADAPTATIONS
+   ================================================== */
+@media (max-width: 1024px) {
+  .contact-hero-grid,
+  .map-layout-grid,
+  .journey-prepare-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .contact-hero-text {
+    text-align: center;
+  }
+  .contact-hero-actions {
+    justify-content: center;
+  }
+  .contact-hero-media img {
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .connect-editorial-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .map-container {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-grid-2col {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .connect-editorial-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .contact-form-card {
+    padding: 28px 20px;
+  }
+  .map-container {
+    height: 340px;
+  }
+  .contact-hero-media img {
+    height: 280px;
+  }
+  .contact-final-cta-box {
+    padding: 36px 20px;
+  }
+  .contact-hero-actions,
+  .contact-final-actions {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .contact-hero-actions .btn,
+  .contact-final-actions .btn {
+    width: min(100%, 340px);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-card {
+    padding: 24px 16px;
+  }
+  .connect-editorial-item {
+    padding: 24px 18px;
+  }
+  .journey-step-card {
+    padding: 20px 16px;
+  }
+  .prepare-checklist-card {
+    padding: 24px 18px;
+  }
+  .map-container {
+    height: 280px;
+  }
+}
+
+
+
+
+/* ==================================================
+   FORGENEST — MASTER COMPREHENSIVE RESPONSIVE REFLOW
+   Ensures ZERO horizontal squeezing on mobile/tablet across all 10 pages.
+   ================================================== */
+
+/* --------------------------------------------------
+   1. LAPTOP / LARGE TABLET BREAKPOINT (max-width: 1280px)
+   -------------------------------------------------- */
+@media (max-width: 1280px) {
+  .services-editorial-grid,
+  .principles-grid,
+  .approach-grid,
+  .standards-grid,
+  .range-grid,
+  .index-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+  }
+
+  .drivers-grid,
+  .moods-grid,
+  .directions-grid,
+  .details-grid,
+  .styles-match-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+  }
+}
+
+/* --------------------------------------------------
+   2. TABLET LANDSCAPE & PORTRAIT (max-width: 1024px)
+   -------------------------------------------------- */
+@media (max-width: 1024px) {
+  /* Container & Section */
+  .container {
+    width: min(100% - 40px, 1200px) !important;
+  }
+  .section {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+  }
+
+  /* All Split 2-Column Hero & Story Layouts Stack to 1 Column */
+  .editorial-hero-grid,
+  .about-hero-grid,
+  .products-hero-grid,
+  .gallery-hero-grid,
+  .materials-hero-grid,
+  .pricing-hero-grid,
+  .hero-editorial-split,
+  .contact-hero-grid,
+  .story-split-grid,
+  .craft-split-grid,
+  .story-grid,
+  .about-story-grid,
+  .craft-grid,
+  .gates-focus-grid,
+  .railings-focus-grid,
+  .gallery-story-split,
+  .explorer-grid,
+  .featured-article-grid,
+  .map-layout-grid,
+  .journey-prepare-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+    text-align: center;
+  }
+
+  /* Center alignment for text and buttons in hero/story sections */
+  .hero-content,
+  .hero-editorial-text,
+  .contact-hero-text,
+  .story-content,
+  .featured-article-content {
+    text-align: center !important;
+    align-items: center !important;
+  }
+  .hero-actions,
+  .contact-hero-actions,
+  .contact-final-actions,
+  .cta-center,
+  .editorial-story-actions {
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .hero-visual,
+  .hero-editorial-media,
+  .contact-hero-media,
+  .story-visual,
+  .featured-article-media {
+    max-width: 620px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  /* Multi-card grids on Tablet: 2 or 3 columns max */
+  .services-editorial-grid,
+  .principles-grid,
+  .approach-grid,
+  .standards-grid,
+  .range-grid,
+  .index-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+  }
+
+  .inspiration-gallery-grid,
+  .exterior-harmony-grid,
+  .gallery-grid-container,
+  .finishes-grid,
+  .factors-grid,
+  .tier-directions-grid,
+  .quote-checklist-grid,
+  .blog-archive-grid,
+  .playbooks-grid,
+  .material-notes-grid,
+  .connect-editorial-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+  }
+
+  .process-timeline-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+  }
+
+  .drivers-grid,
+  .moods-grid,
+  .directions-grid,
+  .details-grid,
+  .styles-match-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+  }
+}
+
+/* --------------------------------------------------
+   3. SMALL TABLETS & MOBILE PHONES (max-width: 768px)
+   -------------------------------------------------- */
+@media (max-width: 768px) {
+  /* Container & Section */
+  .container {
+    width: min(100% - 32px, 1200px) !important;
+  }
+  .section {
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+  .section-header {
+    margin-bottom: 32px !important;
+  }
+
+  /* Headings Reflow */
+  .section-title {
+    font-size: clamp(1.75rem, 5.5vw, 2.2rem) !important;
+  }
+  .hero-editorial-title,
+  .contact-hero-title {
+    font-size: clamp(1.9rem, 6.5vw, 2.5rem) !important;
+  }
+
+  /* ALL CARD GRIDS STRICTLY 1 COLUMN ON MOBILE (NEVER SQUEEZE HORIZONTALLY) */
+  .services-editorial-grid,
+  .principles-grid,
+  .approach-grid,
+  .standards-grid,
+  .range-grid,
+  .index-grid,
+  .drivers-grid,
+  .moods-grid,
+  .directions-grid,
+  .details-grid,
+  .styles-match-grid,
+  .factors-grid,
+  .tier-directions-grid,
+  .quote-checklist-grid,
+  .exterior-harmony-grid,
+  .process-timeline-grid,
+  .inspiration-gallery-grid,
+  .gallery-grid-container,
+  .finishes-grid,
+  .explorer-grid,
+  .experience-pillars-grid,
+  .journey-timeline,
+  .blog-archive-grid,
+  .playbooks-grid,
+  .material-notes-grid,
+  .connect-editorial-grid,
+  .form-grid-2col {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* Specs and Sub-grids on Mobile */
+  .story-mini-specs,
+  .case-study-specs-grid,
+  .gates-specs-grid,
+  .gallery-story-specs,
+  .featured-article-points {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  /* All Cards: 100% width, flexible height */
+  .service-item,
+  .principle-card,
+  .approach-card,
+  .standard-card,
+  .range-card,
+  .material-index-card,
+  .driver-card,
+  .mood-card,
+  .direction-item-card,
+  .detail-item-card,
+  .style-match-card,
+  .factor-card,
+  .tier-direction-card,
+  .checklist-item-card,
+  .harmony-card,
+  .process-step-item,
+  .inspiration-card,
+  .gallery-grid-item,
+  .finish-card,
+  .explorer-card,
+  .experience-pillar-card,
+  .connect-editorial-item {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+  }
+
+  /* Buttons & CTAs Reflow to Full Width on Mobile */
+  .cta-center,
+  .hero-actions,
+  .contact-hero-actions,
+  .contact-final-actions,
+  .editorial-story-actions,
+  .choose-box div[style*="display: flex"],
+  .decision-box div[style*="display: flex"],
+  .conversation-box div[style*="display: flex"],
+  .find-box div[style*="display: flex"],
+  .brief-box div[style*="display: flex"],
+  .cta-box div[style*="display: flex"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 380px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    gap: 12px !important;
+  }
+
+  .cta-center .btn,
+  .hero-actions .btn,
+  .contact-hero-actions .btn,
+  .contact-final-actions .btn,
+  .editorial-story-actions .btn,
+  .choose-box .btn,
+  .decision-box .btn,
+  .conversation-box .btn,
+  .find-box .btn,
+  .brief-box .btn,
+  .cta-box .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  /* Horizontal Filter Bars: Smooth Touch Scrolling without page distortion */
+  .category-filter-wrap,
+  .editorial-filter-bar,
+  .editorial-filter-links,
+  .filter-buttons-scroll {
+    overflow-x: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    padding-bottom: 8px !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  .category-filter-btn,
+  .t-nav-btn,
+  .filter-btn {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  /* Footer Reflow */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+}
+
+/* --------------------------------------------------
+   4. ULTRA-COMPACT MOBILE (max-width: 480px & 360px)
+   -------------------------------------------------- */
+@media (max-width: 480px) {
+  .container {
+    width: min(100% - 24px, 1200px) !important;
+  }
+  .section {
+    padding-top: 44px !important;
+    padding-bottom: 44px !important;
+  }
+  .section-title {
+    font-size: 1.6rem !important;
+  }
+  .hero-editorial-title,
+  .contact-hero-title {
+    font-size: 1.75rem !important;
+  }
+
+  /* Compact Card Padding */
+  .service-item,
+  .principle-card,
+  .approach-card,
+  .standard-card,
+  .range-card,
+  .material-index-card,
+  .driver-card,
+  .finish-card,
+  .explorer-card,
+  .factor-card,
+  .tier-direction-card,
+  .checklist-item-card,
+  .process-step-item,
+  .experience-pillar-card,
+  .connect-editorial-item,
+  .contact-form-card {
+    padding: 20px 16px !important;
+  }
+
+  /* Inputs minimum tap size and no zoom */
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-size: 16px !important;
+    min-height: 48px !important;
+    padding: 12px 14px !important;
+  }
+
+  /* Image wrappers natural proportions */
+  .hero-visual img,
+  .hero-editorial-media img,
+  .contact-hero-media img,
+  .story-visual img,
+  .featured-article-media img {
+    border-radius: var(--radius-md) !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 300px !important;
+    object-fit: cover !important;
+  }
+
+  /* Authentication Pages Mobile Enhancements */
+  .auth-main-container {
+    padding: 44px 14px 14px !important;
+  }
+  .auth-card,
+  .auth-card.register-card {
+    padding: 18px 14px !important;
+  }
+  .auth-title {
+    font-size: 1.35rem !important;
+  }
+  .auth-subtitle {
+    font-size: 0.78rem !important;
+  }
+  .social-auth-grid {
+    gap: 8px !important;
+  }
+  .social-auth-btn {
+    height: 36px !important;
+  }
+}

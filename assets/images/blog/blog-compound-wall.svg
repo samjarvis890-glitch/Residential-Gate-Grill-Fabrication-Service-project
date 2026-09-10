@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="cwBg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#F2EFE9"/><stop offset="100%" stop-color="#DFD9CD"/></linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#cwBg)"/>
+  <!-- Compound Wall Masonry Base -->
+  <rect x="30" y="140" width="540" height="180" fill="#E8E3DA" stroke="#D3CCC0" stroke-width="2"/>
+  <rect x="20" y="130" width="560" height="16" fill="#34373A"/>
+  <!-- Matching Metal Top Boundary Panels -->
+  <g fill="#202124">
+    <rect x="50" y="50" width="220" height="80" rx="2"/>
+    <rect x="310" y="50" width="220" height="80" rx="2"/>
+  </g>
+  <!-- Louver Slats in Metal Top Boundary -->
+  <g stroke="#3A3D41" stroke-width="2">
+    <line x1="65" y1="65" x2="255" y2="65"/>
+    <line x1="65" y1="80" x2="255" y2="80"/>
+    <line x1="65" y1="95" x2="255" y2="95"/>
+    <line x1="65" y1="110" x2="255" y2="110"/>
+    <line x1="325" y1="65" x2="515" y2="65"/>
+    <line x1="325" y1="80" x2="515" y2="80"/>
+    <line x1="325" y1="95" x2="515" y2="95"/>
+    <line x1="325" y1="110" x2="515" y2="110"/>
+  </g>
+  <!-- Architectural Lighting Beam -->
+  <rect x="270" y="160" width="40" height="50" rx="3" fill="#202124"/>
+  <circle cx="290" cy="185" r="5" fill="#FCE8D1"/>
+  <polygon points="270,240 310,240 290,185" fill="#FCE8D1" opacity="0.2"/>
+  <!-- Pavement Base -->
+  <rect x="0" y="320" width="600" height="80" fill="#BFB8AC"/>
+</svg>

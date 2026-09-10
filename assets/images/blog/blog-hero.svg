@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EAE7E1"/>
+      <stop offset="60%" stop-color="#F7F5F1"/>
+      <stop offset="100%" stop-color="#E5E1D8"/>
+    </linearGradient>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DCD7CE"/>
+      <stop offset="50%" stop-color="#ECE8DF"/>
+      <stop offset="100%" stop-color="#D6D0C5"/>
+    </linearGradient>
+    <linearGradient id="gateGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C2E33"/>
+      <stop offset="50%" stop-color="#202124"/>
+      <stop offset="100%" stop-color="#18191B"/>
+    </linearGradient>
+    <linearGradient id="copperTrim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C98B50"/>
+      <stop offset="50%" stop-color="#B47A45"/>
+      <stop offset="100%" stop-color="#9E6735"/>
+    </linearGradient>
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DCD9D2"/>
+      <stop offset="100%" stop-color="#BCB8AF"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#17191B" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Sky & Ambient Background -->
+  <rect width="1200" height="680" fill="url(#skyGrad)"/>
+
+  <!-- Villa Upper Structure & Canopy -->
+  <polygon points="100,120 1100,120 1060,260 140,260" fill="#E2DDD4"/>
+  <rect x="180" y="160" width="840" height="12" fill="url(#copperTrim)"/>
+  <rect x="220" y="180" width="300" height="80" fill="#34373A" opacity="0.9"/>
+  <rect x="680" y="180" width="300" height="80" fill="#34373A" opacity="0.9"/>
+  <!-- Glass Reflections -->
+  <line x1="240" y1="260" x2="320" y2="180" stroke="#FFFFFF" stroke-width="2" opacity="0.4"/>
+  <line x1="700" y1="260" x2="780" y2="180" stroke="#FFFFFF" stroke-width="2" opacity="0.4"/>
+
+  <!-- Left Boundary Wall Pillar -->
+  <rect x="80" y="220" width="160" height="380" fill="url(#wallGrad)" filter="url(#softShadow)"/>
+  <rect x="70" y="210" width="180" height="16" fill="#A8A297"/>
+  <rect x="95" y="250" width="130" height="320" fill="none" stroke="#CCC6BC" stroke-width="2"/>
+  <!-- Exterior Sconce Light Left -->
+  <rect x="145" y="320" width="30" height="60" rx="4" fill="#202124"/>
+  <circle cx="160" cy="350" r="8" fill="#FCE8D1"/>
+  <polygon points="130,420 190,420 160,350" fill="#FCE8D1" opacity="0.15"/>
+
+  <!-- Right Boundary Wall Pillar -->
+  <rect x="960" y="220" width="160" height="380" fill="url(#wallGrad)" filter="url(#softShadow)"/>
+  <rect x="950" y="210" width="180" height="16" fill="#A8A297"/>
+  <rect x="975" y="250" width="130" height="320" fill="none" stroke="#CCC6BC" stroke-width="2"/>
+  <!-- Exterior Sconce Light Right -->
+  <rect x="1025" y="320" width="30" height="60" rx="4" fill="#202124"/>
+  <circle cx="1040" cy="350" r="8" fill="#FCE8D1"/>
+  <polygon points="1010,420 1070,420 1040,350" fill="#FCE8D1" opacity="0.15"/>
+
+  <!-- Driveway Ground -->
+  <polygon points="0,580 1200,580 1200,680 0,680" fill="url(#groundGrad)"/>
+  <!-- Stone Paving Joint Lines -->
+  <line x1="0" y1="630" x2="1200" y2="630" stroke="#A6A299" stroke-width="1.5"/>
+  <line x1="200" y1="580" x2="150" y2="680" stroke="#A6A299" stroke-width="1.5"/>
+  <line x1="450" y1="580" x2="420" y2="680" stroke="#A6A299" stroke-width="1.5"/>
+  <line x1="750" y1="580" x2="780" y2="680" stroke="#A6A299" stroke-width="1.5"/>
+  <line x1="1000" y1="580" x2="1050" y2="680" stroke="#A6A299" stroke-width="1.5"/>
+
+  <!-- Main Gate Frame & Panels (Center) -->
+  <g filter="url(#softShadow)">
+    <!-- Gate Outer Frame -->
+    <rect x="236" y="270" width="728" height="310" rx="4" fill="none" stroke="#202124" stroke-width="12"/>
+    
+    <!-- Left Leaf -->
+    <rect x="242" y="276" width="356" height="298" fill="url(#gateGrad)"/>
+    <!-- Right Leaf -->
+    <rect x="602" y="276" width="356" height="298" fill="url(#gateGrad)"/>
+
+    <!-- Copper Accent Ribbon Band Across Gate -->
+    <rect x="242" y="380" width="716" height="8" fill="url(#copperTrim)"/>
+
+    <!-- Precision Horizontal Slats (Left Leaf) -->
+    <line x1="262" y1="306" x2="578" y2="306" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="262" y1="330" x2="578" y2="330" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="262" y1="354" x2="578" y2="354" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="262" y1="416" x2="578" y2="416" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="262" y1="440" x2="578" y2="440" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="262" y1="464" x2="578" y2="464" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="262" y1="488" x2="578" y2="488" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="262" y1="512" x2="578" y2="512" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="262" y1="536" x2="578" y2="536" stroke="#3A3D43" stroke-width="3"/>
+
+    <!-- Precision Horizontal Slats (Right Leaf) -->
+    <line x1="622" y1="306" x2="938" y2="306" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="622" y1="330" x2="938" y2="330" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="622" y1="354" x2="938" y2="354" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="622" y1="416" x2="938" y2="416" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="622" y1="440" x2="938" y2="440" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="622" y1="464" x2="938" y2="464" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="622" y1="488" x2="938" y2="488" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="622" y1="512" x2="938" y2="512" stroke="#3A3D43" stroke-width="3"/>
+    <line x1="622" y1="536" x2="938" y2="536" stroke="#3A3D43" stroke-width="3"/>
+
+    <!-- Center Meeting Stile & Architectural Pull Handles -->
+    <line x1="600" y1="276" x2="600" y2="574" stroke="#121314" stroke-width="4"/>
+    <rect x="586" y="396" width="6" height="80" rx="3" fill="url(#copperTrim)"/>
+    <rect x="608" y="396" width="6" height="80" rx="3" fill="url(#copperTrim)"/>
+  </g>
+
+  <!-- Architectural Plantings / Landscaping at Bases -->
+  <path d="M 40,580 Q 70,520 90,580 Q 110,500 130,580 Q 150,530 170,580 Z" fill="#6B7865"/>
+  <path d="M 1030,580 Q 1050,520 1070,580 Q 1090,490 1110,580 Q 1130,530 1150,580 Z" fill="#6B7865"/>
+</svg>

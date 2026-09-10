@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <defs>
+    <linearGradient id="dsBg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#E8E4DB"/><stop offset="100%" stop-color="#D3CCC0"/></linearGradient>
+    <linearGradient id="copH" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#C98B50"/><stop offset="100%" stop-color="#9E6735"/></linearGradient>
+  </defs>
+  <rect width="900" height="500" fill="url(#dsBg)"/>
+  <!-- Two-Story Modern Residence Architectural Elevation -->
+  <!-- Ground Floor Facade & Cantilever -->
+  <polygon points="80,100 820,100 780,240 120,240" fill="#E2DDD4"/>
+  <rect x="140" y="140" width="620" height="10" fill="url(#copH)"/>
+  <!-- Upper Balcony Glass & Stainless Railing -->
+  <rect x="200" y="155" width="500" height="75" fill="#CBE5EE" opacity="0.6" stroke="#9AA0A6" stroke-width="2"/>
+  <line x1="200" y1="155" x2="700" y2="155" stroke="#202124" stroke-width="4"/>
+  
+  <!-- Ground Floor Boundary Wall, Pillars & Wide Sliding Gate -->
+  <rect x="60" y="240" width="160" height="200" fill="#E8E4DB" stroke="#CCC5B8" stroke-width="2"/>
+  <rect x="680" y="240" width="160" height="200" fill="#E8E4DB" stroke="#CCC5B8" stroke-width="2"/>
+  
+  <!-- Wide Architectural Sliding Gate in Center -->
+  <rect x="230" y="260" width="440" height="180" rx="3" fill="#202124"/>
+  <rect x="240" y="270" width="420" height="160" fill="#17191B"/>
+  <!-- Slat Rhythm -->
+  <g stroke="#3A3D43" stroke-width="3">
+    <line x1="250" y1="295" x2="650" y2="295"/>
+    <line x1="250" y1="320" x2="650" y2="320"/>
+    <line x1="250" y1="345" x2="650" y2="345"/>
+    <line x1="250" y1="370" x2="650" y2="370"/>
+    <line x1="250" y1="395" x2="650" y2="395"/>
+    <line x1="250" y1="420" x2="650" y2="420"/>
+  </g>
+  <rect x="240" y="340" width="420" height="6" fill="url(#copH)"/>
+  
+  <!-- Ground Pavers -->
+  <rect x="0" y="440" width="900" height="60" fill="#BFB9AF"/>
+</svg>

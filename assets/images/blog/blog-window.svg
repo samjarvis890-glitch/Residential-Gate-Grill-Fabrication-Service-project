@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="wBg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#EBE7DE"/><stop offset="100%" stop-color="#DAD4C7"/></linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#wBg)"/>
+  <!-- Villa Wall Opening -->
+  <rect x="120" y="50" width="360" height="300" rx="4" fill="#202124"/>
+  <!-- Window Glass -->
+  <rect x="135" y="65" width="330" height="270" fill="#E2EDF2"/>
+  <line x1="160" y1="310" x2="280" y2="90" stroke="#FFFFFF" stroke-width="3" opacity="0.6"/>
+  <!-- Minimalist Architectural Grill Pattern (Slim Linear Symmetrical) -->
+  <g stroke="#26282B" stroke-width="6">
+    <line x1="135" y1="120" x2="465" y2="120"/>
+    <line x1="135" y1="180" x2="465" y2="180"/>
+    <line x1="135" y1="240" x2="465" y2="240"/>
+    <line x1="135" y1="300" x2="465" y2="300"/>
+    <line x1="220" y1="65" x2="220" y2="335"/>
+    <line x1="380" y1="65" x2="380" y2="335"/>
+  </g>
+  <!-- Copper Accent Joinery Studs -->
+  <circle cx="220" cy="120" r="5" fill="#B47A45"/>
+  <circle cx="380" cy="120" r="5" fill="#B47A45"/>
+  <circle cx="220" cy="180" r="5" fill="#B47A45"/>
+  <circle cx="380" cy="180" r="5" fill="#B47A45"/>
+  <circle cx="220" cy="240" r="5" fill="#B47A45"/>
+  <circle cx="380" cy="240" r="5" fill="#B47A45"/>
+  <circle cx="220" cy="300" r="5" fill="#B47A45"/>
+  <circle cx="380" cy="300" r="5" fill="#B47A45"/>
+</svg>

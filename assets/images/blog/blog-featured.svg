@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <defs>
+    <linearGradient id="featWall" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ECE7DF"/>
+      <stop offset="100%" stop-color="#D8D2C6"/>
+    </linearGradient>
+    <linearGradient id="darkMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C2E33"/>
+      <stop offset="100%" stop-color="#1A1B1D"/>
+    </linearGradient>
+    <linearGradient id="warmWood" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A56E3B"/>
+      <stop offset="50%" stop-color="#BD834D"/>
+      <stop offset="100%" stop-color="#8F5C2C"/>
+    </linearGradient>
+    <filter id="fShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#17191B" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Background Architecture Wall -->
+  <rect width="800" height="520" fill="url(#featWall)"/>
+  
+  <!-- Modern Entry Portico -->
+  <polygon points="60,80 740,80 710,180 90,180" fill="#DDD8CE"/>
+  <rect x="110" y="110" width="580" height="8" fill="#B47A45"/>
+
+  <!-- Left Architectural Fluted Pier -->
+  <rect x="70" y="150" width="120" height="320" fill="#202124" filter="url(#fShadow)"/>
+  <line x1="95" y1="160" x2="95" y2="460" stroke="#34373A" stroke-width="2"/>
+  <line x1="115" y1="160" x2="115" y2="460" stroke="#34373A" stroke-width="2"/>
+  <line x1="135" y1="160" x2="135" y2="460" stroke="#34373A" stroke-width="2"/>
+  <line x1="155" y1="160" x2="155" y2="460" stroke="#34373A" stroke-width="2"/>
+  
+  <!-- Right Architectural Wall -->
+  <rect x="610" y="150" width="130" height="320" fill="#DDD8CE" filter="url(#fShadow)"/>
+  <!-- Modern Sconce -->
+  <rect x="655" y="240" width="24" height="48" rx="3" fill="#202124"/>
+  <circle cx="667" cy="264" r="6" fill="#FCE8D1"/>
+
+  <!-- Pavement Base -->
+  <rect x="0" y="450" width="800" height="70" fill="#BFB9AE"/>
+  <line x1="0" y1="485" x2="800" y2="485" stroke="#A8A297" stroke-width="2"/>
+
+  <!-- Main Gate (Bespoke Minimal Slat Gate with Wood Infill) -->
+  <g filter="url(#fShadow)">
+    <rect x="195" y="190" width="410" height="260" rx="3" fill="none" stroke="#202124" stroke-width="8"/>
+    <rect x="200" y="195" width="400" height="250" fill="url(#darkMetal)"/>
+    
+    <!-- Warm Infill Louvers -->
+    <rect x="220" y="220" width="360" height="18" fill="url(#warmWood)"/>
+    <rect x="220" y="250" width="360" height="18" fill="url(#warmWood)"/>
+    <rect x="220" y="280" width="360" height="18" fill="url(#warmWood)"/>
+    <rect x="220" y="310" width="360" height="18" fill="url(#warmWood)"/>
+    <rect x="220" y="340" width="360" height="18" fill="url(#warmWood)"/>
+    <rect x="220" y="370" width="360" height="18" fill="url(#warmWood)"/>
+    <rect x="220" y="400" width="360" height="18" fill="url(#warmWood)"/>
+
+    <!-- Vertical Copper Accent Stile -->
+    <rect x="490" y="200" width="8" height="240" fill="#C98B50"/>
+    <!-- Pull Bar Handle -->
+    <rect x="480" y="280" width="6" height="70" rx="2" fill="#FFFFFF"/>
+  </g>
+</svg>

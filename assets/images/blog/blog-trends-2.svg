@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <defs><linearGradient id="tWood" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#AC7746"/><stop offset="100%" stop-color="#8F5A29"/></linearGradient></defs>
+  <rect width="500" height="350" fill="#E8E4DB"/>
+  <rect x="40" y="40" width="420" height="270" rx="4" fill="#202124"/>
+  <!-- Alternating dark metal and warm wood louvers -->
+  <rect x="60" y="65" width="380" height="20" fill="url(#tWood)"/>
+  <rect x="60" y="95" width="380" height="20" fill="#2E3036"/>
+  <rect x="60" y="125" width="380" height="20" fill="url(#tWood)"/>
+  <rect x="60" y="155" width="380" height="20" fill="#2E3036"/>
+  <rect x="60" y="185" width="380" height="20" fill="url(#tWood)"/>
+  <rect x="60" y="215" width="380" height="20" fill="#2E3036"/>
+  <rect x="60" y="245" width="380" height="20" fill="url(#tWood)"/>
+  <rect x="360" y="65" width="8" height="200" fill="#C98B50"/>
+</svg>

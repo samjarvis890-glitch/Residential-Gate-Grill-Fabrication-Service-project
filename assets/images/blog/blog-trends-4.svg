@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <rect width="500" height="350" fill="#E8E4DB"/>
+  <!-- Integrated Compound Wall & Continuous Gate Boundary -->
+  <rect x="40" y="80" width="180" height="210" fill="#DDD7CD" stroke="#CCC5B8" stroke-width="2"/>
+  <rect x="30" y="70" width="200" height="15" fill="#34373A"/>
+  
+  <rect x="220" y="100" width="240" height="190" rx="3" fill="#202124"/>
+  <rect x="230" y="110" width="220" height="170" fill="#17191B"/>
+  <line x1="230" y1="150" x2="450" y2="150" stroke="#3A3D43" stroke-width="2"/>
+  <line x1="230" y1="190" x2="450" y2="190" stroke="#3A3D43" stroke-width="2"/>
+  <line x1="230" y1="230" x2="450" y2="230" stroke="#3A3D43" stroke-width="2"/>
+  <rect x="230" y="185" width="220" height="5" fill="#B47A45"/>
+  <rect x="0" y="290" width="500" height="60" fill="#BFB9AE"/>
+</svg>

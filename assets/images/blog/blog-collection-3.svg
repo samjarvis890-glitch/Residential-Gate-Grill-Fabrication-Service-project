@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <rect width="600" height="400" fill="#EBE7DE"/>
+  <!-- Quotation Analysis Document & Clear Scope Breakdown -->
+  <rect x="120" y="50" width="360" height="300" rx="6" fill="#FFFFFF" stroke="#D8D2C5" stroke-width="2"/>
+  <rect x="150" y="80" width="180" height="12" fill="#202124"/>
+  <line x1="150" y1="120" x2="450" y2="120" stroke="#EAE6DE" stroke-width="2"/>
+  <line x1="150" y1="150" x2="450" y2="150" stroke="#EAE6DE" stroke-width="2"/>
+  <line x1="150" y1="180" x2="450" y2="180" stroke="#EAE6DE" stroke-width="2"/>
+  <line x1="150" y1="210" x2="450" y2="210" stroke="#EAE6DE" stroke-width="2"/>
+  <rect x="150" y="240" width="140" height="16" fill="#B47A45"/>
+  <rect x="370" y="240" width="80" height="16" fill="#202124"/>
+</svg>

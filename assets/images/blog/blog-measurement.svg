@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="msrBg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#F5F3ED"/><stop offset="100%" stop-color="#E2DDD2"/></linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#msrBg)"/>
+  <!-- Clipboard & Architectural Measurement Sheet -->
+  <rect x="130" y="50" width="340" height="300" rx="8" fill="#C59B68"/>
+  <rect x="145" y="70" width="310" height="265" rx="4" fill="#FFFFFF"/>
+  <!-- Top Clip -->
+  <rect x="250" y="38" width="100" height="24" rx="4" fill="#202124"/>
+  <circle cx="300" cy="50" r="4" fill="#E2DDD2"/>
+  
+  <!-- Architectural Site Checklist -->
+  <text x="170" y="110" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#202124">SITE MEASUREMENT SURVEY</text>
+  <line x1="170" y1="120" x2="425" y2="120" stroke="#E4E0D9" stroke-width="2"/>
+  
+  <!-- Checklist items -->
+  <rect x="170" y="140" width="16" height="16" rx="3" fill="#B47A45"/>
+  <polyline points="173,148 177,152 183,144" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="195" y="153" font-family="'Inter', sans-serif" font-size="12" fill="#34373A">Clear Width &amp; Height Plumb</text>
+  
+  <rect x="170" y="175" width="16" height="16" rx="3" fill="#B47A45"/>
+  <polyline points="173,183 177,187 183,179" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="195" y="188" font-family="'Inter', sans-serif" font-size="12" fill="#34373A">Ground Slope &amp; Level Variance</text>
+
+  <rect x="170" y="210" width="16" height="16" rx="3" fill="#B47A45"/>
+  <polyline points="173,218 177,222 183,214" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="195" y="223" font-family="'Inter', sans-serif" font-size="12" fill="#34373A">Pillar Anchor Load Capacity</text>
+
+  <rect x="170" y="245" width="16" height="16" rx="3" fill="#B47A45"/>
+  <polyline points="173,253 177,257 183,249" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="195" y="258" font-family="'Inter', sans-serif" font-size="12" fill="#34373A">Motorization Conduit Run</text>
+
+  <!-- Precision Laser Level Line -->
+  <line x1="80" y1="285" x2="520" y2="285" stroke="#C98B50" stroke-dasharray="6,4" stroke-width="2"/>
+</svg>

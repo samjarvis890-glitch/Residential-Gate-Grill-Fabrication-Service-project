@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="finBg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#ECE8DF"/><stop offset="100%" stop-color="#D7D1C5"/></linearGradient>
+    <linearGradient id="sandTex" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2D3035"/><stop offset="100%" stop-color="#1E2023"/></linearGradient>
+    <linearGradient id="copSatin" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D49458"/><stop offset="50%" stop-color="#B47A45"/><stop offset="100%" stop-color="#8F5B2A"/></linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#finBg)"/>
+  <!-- Textured Surface Panels Close-Up -->
+  <rect x="70" y="80" width="210" height="240" rx="4" fill="url(#sandTex)"/>
+  <!-- Micro texture grid -->
+  <g fill="#383B40" opacity="0.4">
+    <circle cx="100" cy="110" r="1.5"/><circle cx="120" cy="110" r="1.5"/><circle cx="140" cy="110" r="1.5"/><circle cx="160" cy="110" r="1.5"/><circle cx="180" cy="110" r="1.5"/>
+    <circle cx="110" cy="130" r="1.5"/><circle cx="130" cy="130" r="1.5"/><circle cx="150" cy="130" r="1.5"/><circle cx="170" cy="130" r="1.5"/>
+    <circle cx="100" cy="150" r="1.5"/><circle cx="120" cy="150" r="1.5"/><circle cx="140" cy="150" r="1.5"/><circle cx="160" cy="150" r="1.5"/>
+  </g>
+  <text x="175" y="295" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#F4F3F0" text-anchor="middle">MATTE SANDTEX</text>
+
+  <!-- Satin Warm Copper Specimen -->
+  <rect x="320" y="80" width="210" height="240" rx="4" fill="url(#copSatin)"/>
+  <line x1="330" y1="120" x2="520" y2="120" stroke="#FFFFFF" stroke-width="1.5" opacity="0.4"/>
+  <line x1="330" y1="160" x2="520" y2="160" stroke="#FFFFFF" stroke-width="1.5" opacity="0.4"/>
+  <line x1="330" y1="200" x2="520" y2="200" stroke="#FFFFFF" stroke-width="1.5" opacity="0.4"/>
+  <text x="425" y="295" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">SATIN COPPER PU</text>
+</svg>

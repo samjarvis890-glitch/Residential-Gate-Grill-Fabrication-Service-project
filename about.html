@@ -1,0 +1,418 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ForgeNest | About Our Residential Fabrication Approach</title>
+  <meta name="description" content="Discover how ForgeNest crafts residential gates, railings, grills and custom metalwork with thoughtful architectural design and precision.">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ForgeNest | About Our Residential Fabrication Approach">
+  <meta property="og:description" content="Crafting the First Impression of Home. Learn about our philosophy, residential focus, craftsmanship standards, and consultation process.">
+  <meta property="og:image" content="assets/images/about/hero/about-hero.jpg">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ==================================================
+       GLOBAL STICKY NAVBAR
+       ================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="ForgeNest Home">
+        <img src="assets/images/logo/logo.svg" alt="ForgeNest Logo" class="logo-light" width="190" height="48">
+        <img src="assets/images/logo/logo-dark.svg" alt="ForgeNest Dark Logo" class="logo-dark" width="190" height="48">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Desktop Navigation">
+        <div class="nav-item dropdown">
+          <a href="index.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            Home <i class="bi bi-chevron-down" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="index.html" class="dropdown-item">Home 1</a>
+            <a href="home2.html" class="dropdown-item">Home 2</a>
+          </div>
+        </div>
+        <div class="nav-item"><a href="about.html" class="nav-link active">About</a></div>
+        <div class="nav-item"><a href="products.html" class="nav-link">Products</a></div>
+        <div class="nav-item"><a href="design-gallery.html" class="nav-link">Design Gallery</a></div>
+        <div class="nav-item"><a href="materials.html" class="nav-link">Materials</a></div>
+        <div class="nav-item"><a href="pricing-guide.html" class="nav-link">Pricing Guide</a></div>
+        <div class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></div>
+        <div class="nav-item"><a href="blog.html" class="nav-link">Blog</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+        </button>
+
+        <button type="button" class="icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR layout" title="Toggle RTL/LTR layout">
+          <span class="rtl-label" style="font-weight:700;font-size:0.75rem;">RTL</span>
+        </button>
+
+        <a href="login.html" class="btn btn-primary btn-nav-cta">
+          Book Free Visit
+        </a>
+
+        <button type="button" class="hamburger-btn" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile & Tablet Off-Canvas Drawer -->
+  <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="ForgeNest Home">
+        <img src="assets/images/logo/logo.svg" alt="ForgeNest Logo" class="logo-light" width="150" height="38">
+        <img src="assets/images/logo/logo-dark.svg" alt="ForgeNest Dark Logo" class="logo-dark" width="150" height="38">
+      </a>
+      <button type="button" class="drawer-close-btn" aria-label="Close mobile navigation menu">
+        <i class="bi bi-x-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="drawer-nav-item">
+        <a href="index.html" class="drawer-nav-link drawer-dropdown-toggle">
+          <span>Home</span>
+          <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </a>
+        <div class="drawer-submenu">
+          <a href="index.html" class="drawer-sublink">Home 1</a>
+          <a href="home2.html" class="drawer-sublink">Home 2</a>
+        </div>
+      </div>
+      <div class="drawer-nav-item"><a href="about.html" class="drawer-nav-link active">About</a></div>
+      <div class="drawer-nav-item"><a href="products.html" class="drawer-nav-link">Products</a></div>
+      <div class="drawer-nav-item"><a href="design-gallery.html" class="drawer-nav-link">Design Gallery</a></div>
+      <div class="drawer-nav-item"><a href="materials.html" class="drawer-nav-link">Materials</a></div>
+      <div class="drawer-nav-item"><a href="pricing-guide.html" class="drawer-nav-link">Pricing Guide</a></div>
+      <div class="drawer-nav-item"><a href="testimonials.html" class="drawer-nav-link">Testimonials</a></div>
+      <div class="drawer-nav-item"><a href="blog.html" class="drawer-nav-link">Blog</a></div>
+      <div class="drawer-nav-item"><a href="contact.html" class="drawer-nav-link">Contact</a></div>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-controls">
+        <button type="button" class="drawer-ctrl-item theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+          <span>Theme</span>
+        </button>
+        <button type="button" class="drawer-ctrl-item rtl-toggle-btn" aria-label="Toggle layout direction">
+          <i class="bi bi-translate" aria-hidden="true"></i>
+          <span class="rtl-label">RTL / LTR</span>
+        </button>
+      </div>
+      <a href="login.html" class="btn btn-primary" style="width:100%;">
+        Book Free Visit
+      </a>
+    </div>
+  </aside>
+
+  <main id="mainContent">
+
+    <!-- ==================================================
+         SECTION 1: STORY HERO (UNIQUE ARCHITECTURAL SPLIT)
+         ================================================== -->
+    <section class="section" id="hero" style="padding: 70px 0 80px; background: var(--bg);">
+      <div class="container">
+        <div class="about-hero-grid reveal">
+          <div class="hero-content">
+            <span class="section-label">OUR STORY &amp; VISION</span>
+            <h1 style="font-size: clamp(2.3rem, 4.8vw, 3.4rem); font-weight: 800; line-height: 1.18; margin-bottom: 18px; color: var(--text);">
+              Crafting the First Impression of Home
+            </h1>
+            <p style="font-size: 1.12rem; color: var(--muted); line-height: 1.7; margin-bottom: 32px;">
+              ForgeNest was founded on a simple belief: residential metalwork should not be treated as mere utilitarian welding, but as an enduring architectural element designed around the home.
+            </p>
+            <div class="hero-actions">
+              <a href="login.html" class="btn btn-primary">
+                Book Free Visit
+              </a>
+              <a href="products.html" class="btn btn-outline-charcoal">
+                View Products
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-lg);">
+              <img src="assets/images/about/hero/about-hero.jpg" alt="Architectural residential entrance craft" width="700" height="480" style="width:100%; height:auto; display:block;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 2: OUR STORY + BELIEF
+         ================================================== -->
+    <section class="section" id="story-belief" style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+      <div class="container">
+        <div class="about-story-grid reveal">
+          <div>
+            <span class="section-label">RESIDENTIAL FOCUS</span>
+            <h2 class="section-title">Designed for Homes, Not Industrial Yards</h2>
+            <p style="font-size: 1.05rem; color: var(--muted); line-height: 1.7; margin-bottom: 18px;">
+              Most fabrication shops operate with an industrial mindset—focused on bulk tonnage rather than residential proportions, smooth weld finishes, and clean on-site installation.
+            </p>
+            <p style="font-size: 1.05rem; color: var(--muted); line-height: 1.7; margin-bottom: 24px;">
+              At ForgeNest, every project is residential. We obsess over the tactile details: flush lock-boxes, silent ball-bearing gate hinges, clean glass balustrade spigots, and powder coat textures that complement natural stone and timber facade elements.
+            </p>
+            <div style="border-left: 3px solid var(--accent); padding-left: 18px; font-style: italic; color: var(--text);">
+              “We build security elements that look like they were always meant to be part of the architecture.”
+            </div>
+          </div>
+
+          <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow-md);">
+            <img src="assets/images/about/story/about-story.jpg" alt="Residential entrance craftsmanship" width="600" height="420" style="width:100%; height:auto; display:block;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 3: OUR APPROACH
+         ================================================== -->
+    <section class="section" id="our-approach" style="background: var(--bg);">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-label">CONSULTATIVE METHOD</span>
+          <h2 class="section-title">Our 5-Step Approach</h2>
+          <p class="section-desc" style="max-width: 620px; margin: 0 auto; color: var(--muted);">
+            How we guide homeowners from early visual inspiration to flawless handover.
+          </p>
+        </div>
+
+        <div class="approach-grid reveal">
+          <div class="approach-card">
+            <div style="font-weight: 800; color: var(--accent); font-size: 1.4rem; margin-bottom: 8px;">01</div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 6px;">Understand</h3>
+            <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.55;">Listening to your home’s privacy needs, aesthetic preferences, and budget expectations.</p>
+          </div>
+
+          <div class="approach-card">
+            <div style="font-weight: 800; color: var(--accent); font-size: 1.4rem; margin-bottom: 8px;">02</div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 6px;">Design</h3>
+            <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.55;">Drafting CAD elevation models and slat proportion studies for clear architectural alignment.</p>
+          </div>
+
+          <div class="approach-card">
+            <div style="font-weight: 800; color: var(--accent); font-size: 1.4rem; margin-bottom: 8px;">03</div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 6px;">Material</h3>
+            <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.55;">Selecting the appropriate alloy (MS, SS 304/316, or Aluminium) and protective finish system.</p>
+          </div>
+
+          <div class="approach-card">
+            <div style="font-weight: 800; color: var(--accent); font-size: 1.4rem; margin-bottom: 8px;">04</div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 6px;">Measure</h3>
+            <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.55;">Laser on-site survey recording exact wall plumb lines, ground elevations, and structural points.</p>
+          </div>
+
+          <div class="approach-card">
+            <div style="font-weight: 800; color: var(--accent); font-size: 1.4rem; margin-bottom: 8px;">05</div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 6px;">Plan &amp; Fit</h3>
+            <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.55;">Careful workshop fabrication, protective packaging, and meticulous on-site installation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 4: CRAFTSMANSHIP + MATERIAL THINKING
+         ================================================== -->
+    <section class="section section-dark" id="craftsmanship-thinking">
+      <div class="container">
+        <div class="craft-grid reveal">
+          <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-dark);">
+            <img src="assets/images/about/craftsmanship/about-craftsmanship.jpg" alt="Master metal workshop craftsmanship" width="600" height="420" style="width:100%; height:auto; display:block;">
+          </div>
+
+          <div>
+            <span class="section-label" style="color: var(--accent);">METALLURGICAL QUALITY</span>
+            <h2 class="section-title" style="color: #FFFFFF;">Craftsmanship &amp; Material Thinking</h2>
+            <p style="color: #D4D0C8; line-height: 1.7; margin-bottom: 20px;">
+              Metalwork quality is defined by what happens before the final coat of paint is applied. Structural weld penetration, chemical rust de-scaling, and zinc phosphate undercoats form the foundation of durability.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 14px;">
+              <div style="display: flex; align-items: baseline; gap: 10px;">
+                <i class="bi bi-check-circle text-accent"></i>
+                <span style="color: #F4F3F0;"><strong>Construction Quality:</strong> Heavy-duty box sections and precision mitred corner joints.</span>
+              </div>
+              <div style="display: flex; align-items: baseline; gap: 10px;">
+                <i class="bi bi-check-circle text-accent"></i>
+                <span style="color: #F4F3F0;"><strong>Surface Finishing:</strong> Architectural electrostatic powder coating cured at 200°C.</span>
+              </div>
+              <div style="display: flex; align-items: baseline; gap: 10px;">
+                <i class="bi bi-check-circle text-accent"></i>
+                <span style="color: #F4F3F0;"><strong>Material Choice:</strong> Environment-specific alloy selection for urban and coastal residences.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 5: THE FORGENEST STANDARD
+         ================================================== -->
+    <section class="section" id="forgenest-standard" style="background: var(--surface);">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="section-label">OUR COMMITMENT</span>
+          <h2 class="section-title">The ForgeNest Standard</h2>
+          <p class="section-desc" style="max-width: 600px; margin: 0 auto; color: var(--muted);">
+            Five principles that govern every residential gate, railing, and grill we fabricate.
+          </p>
+        </div>
+
+        <div class="standards-grid reveal">
+          <div class="standard-card">
+            <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 8px;">Thoughtful Design</h3>
+            <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.55;">Proportions and sightlines that elevate curb appeal without visual clutter.</p>
+          </div>
+
+          <div class="standard-card">
+            <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 8px;">Residential Focus</h3>
+            <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.55;">Specialized solutions engineered exclusively for private homes and villas.</p>
+          </div>
+
+          <div class="standard-card">
+            <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 8px;">Clear Quotes</h3>
+            <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.55;">Transparent specifications detailing metal gauges, finishes, and hardware.</p>
+          </div>
+
+          <div class="standard-card">
+            <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 8px;">Customization</h3>
+            <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.55;">Every gate and balustrade is fabricated to the millimeter of your site.</p>
+          </div>
+
+          <div class="standard-card">
+            <h3 style="font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 8px;">Detail Obsession</h3>
+            <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.55;">Clean weld grinds, flush fittings, and smooth powder-coat textures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+         SECTION 6: CONSULTATION CTA
+         ================================================== -->
+    <section class="section" id="consultation-cta" style="padding: 90px 0; background-color: var(--bg); border-top: 1px solid var(--border); text-align: center;">
+      <div class="container">
+        <div class="cta-box reveal" style="max-width: 720px; margin: 0 auto;">
+          <span class="section-label">CONSULTATION</span>
+          <h2 class="section-title" style="font-size: clamp(2rem, 3.5vw, 2.6rem); margin-bottom: 16px;">
+            Ready to Discuss Your Home's Entrance?
+          </h2>
+          <p style="font-size: 1.1rem; color: var(--muted); line-height: 1.65; margin-bottom: 32px;">
+            Invite our team for a free on-site measurement survey. We will review design options, measure your openings, and provide a clear quotation.
+          </p>
+          <div class="cta-center">
+            <a href="login.html" class="btn btn-primary">
+              Book Free Site Visit
+            </a>
+            <a href="design-gallery.html" class="btn btn-outline-charcoal">
+              Explore Design Gallery
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================================================
+       GLOBAL FOOTER
+       ================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand-header">
+            <a href="index.html" class="brand-logo" aria-label="ForgeNest Home">
+              <img src="assets/images/logo/logo-dark.svg" alt="ForgeNest Logo" width="160" height="38">
+            </a>
+          </div>
+          <p class="footer-tagline">
+            Secure Elegance. Crafted for Every Home.
+          </p>
+          <p class="footer-desc">
+            Bespoke residential fabrication specializing in precision gates, balustrades, window safety grills, and boundary compound solutions.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="design-gallery.html">Design Gallery</a></li>
+            <li><a href="materials.html">Materials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="products.html#ms-gates">MS Gates</a></li>
+            <li><a href="products.html#ss-railings">SS Railings</a></li>
+            <li><a href="products.html#aluminum-grills">Aluminum Grills</a></li>
+            <li><a href="products.html#window-guards">Window Guards</a></li>
+            <li><a href="products.html#compound-walls">Compound Walls</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="pricing-guide.html">Pricing Guide</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html#measurement-form">Site Measurement</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+18005553674">+1 (800) 555-3674</a></li>
+            <li><a href="mailto:hello@forgenest.com">hello@forgenest.com</a></li>
+            <li><span>42 Artisan Way, Studio 4</span></li>
+            <li><span>Mon – Sat: 9:00 AM – 7:00 PM</span></li>
+            <li><a href="contact.html#measurement-form" style="color: var(--accent); font-weight: 600;">Book Consultation &rarr;</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ForgeNest. All rights reserved. Architectural Residential Fabrication.</p>
+        <div class="footer-bottom-links">
+          <a href="about.html">Privacy Policy</a>
+          <a href="contact.html">Site Visit Request</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

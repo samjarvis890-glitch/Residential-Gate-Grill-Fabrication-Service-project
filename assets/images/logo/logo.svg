@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" fill="none">
+  <!-- Geometric Gate & Architectural House Symbol -->
+  <g transform="translate(4, 6)">
+    <!-- House Roof Outline (Nest) -->
+    <path d="M24 2 L46 20 L40 20 L24 7 L8 20 L2 20 Z" fill="#B47A45" />
+    
+    <!-- Outer Metal Frame (Gate) -->
+    <rect x="6" y="20" width="36" height="26" rx="2" stroke="#202124" stroke-width="2.5" fill="none" />
+    
+    <!-- Gate Vertical Pickets / Metal Bars -->
+    <line x1="14" y1="20" x2="14" y2="46" stroke="#202124" stroke-width="1.8" />
+    <line x1="20" y1="20" x2="20" y2="46" stroke="#B47A45" stroke-width="2" />
+    <line x1="28" y1="20" x2="28" y2="46" stroke="#B47A45" stroke-width="2" />
+    <line x1="34" y1="20" x2="34" y2="46" stroke="#202124" stroke-width="1.8" />
+    
+    <!-- Central Geometric Chevron / Accent -->
+    <path d="M14 33 L24 25 L34 33" stroke="#B47A45" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M14 39 L24 31 L34 39" stroke="#202124" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="60" y="33" font-family="'Poppins', 'Inter', -apple-system, sans-serif" font-size="24" font-weight="700" letter-spacing="-0.5" fill="#202124">
+    FORGE<tspan fill="#B47A45">NEST</tspan>
+  </text>
+  <text x="61" y="47" font-family="'Inter', -apple-system, sans-serif" font-size="8.5" font-weight="600" letter-spacing="2.2" fill="#707070">
+    RESIDENTIAL FABRICATION
+  </text>
+</svg>

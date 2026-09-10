@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <defs><linearGradient id="glB" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#E2F0F7"/><stop offset="100%" stop-color="#BCDCE9"/></linearGradient></defs>
+  <rect width="500" height="350" fill="#EBE7DE"/>
+  <rect x="50" y="40" width="400" height="270" rx="6" fill="url(#glB)" stroke="#9CB8C8" stroke-width="2"/>
+  <line x1="80" y1="280" x2="200" y2="60" stroke="#FFFFFF" stroke-width="3" opacity="0.8"/>
+  <rect x="50" y="40" width="400" height="16" fill="#202124"/>
+  <text x="250" y="240" font-family="'Poppins', sans-serif" font-size="20" font-weight="700" fill="#202124" text-anchor="middle">GLASS + METAL</text>
+  <text x="250" y="265" font-family="'Inter', sans-serif" font-size="12" fill="#5F6368" text-anchor="middle">Toughened Laminated • Open Light Composition</text>
+</svg>

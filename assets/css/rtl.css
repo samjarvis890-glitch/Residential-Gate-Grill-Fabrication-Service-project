@@ -1,0 +1,186 @@
+/* ==================================================
+   FORGENEST — RTL OVERRIDES
+   Supported when dir="rtl" or [dir="rtl"]
+   ================================================== */
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .section-header.text-center,
+[dir="rtl"] .text-center {
+  text-align: center;
+}
+
+/* Section Labels */
+[dir="rtl"] .section-label::before {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+/* Links & Buttons */
+[dir="rtl"] .btn-link svg,
+[dir="rtl"] .btn-link i {
+  transform: scaleX(-1);
+}
+[dir="rtl"] .btn-link:hover svg,
+[dir="rtl"] .btn-link:hover i {
+  transform: scaleX(-1) translateX(4px);
+}
+
+[dir="rtl"] .btn {
+  letter-spacing: normal;
+}
+
+/* Navbar Dropdowns */
+[dir="rtl"] .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .dropdown-item:hover,
+[dir="rtl"] .dropdown-item.active {
+  padding-left: 18px;
+  padding-right: 22px;
+}
+
+/* Mobile Drawer */
+[dir="rtl"] .mobile-drawer {
+  right: auto;
+  left: 0;
+  border-left: none;
+  border-right: 1px solid var(--border);
+  transform: translateX(-100%);
+}
+
+[dir="rtl"] .mobile-drawer.active {
+  transform: translateX(0);
+}
+
+[dir="rtl"] .drawer-submenu {
+  padding-left: 0;
+  padding-right: 16px;
+}
+
+/* Hero Accent Tag */
+[dir="rtl"] .hero-accent-tag {
+  left: auto;
+  right: 20px;
+}
+
+/* Floating Benefits */
+[dir="rtl"] .benefit-item {
+  border-right: none;
+  border-left: 1px solid var(--border);
+}
+[dir="rtl"] .benefit-item:last-child {
+  border-left: none;
+}
+
+/* Introduction Section */
+[dir="rtl"] .intro-copper-badge {
+  left: auto;
+  right: -14px;
+}
+
+/* Materials Cards */
+[dir="rtl"] .material-item-card {
+  border-left: 1px solid var(--border);
+  border-right: 4px solid var(--accent);
+}
+[dir="rtl"] .material-item-card:hover {
+  transform: translateX(-6px);
+}
+
+/* FAQ */
+[dir="rtl"] .faq-header {
+  text-align: right;
+}
+
+/* Footer Links */
+[dir="rtl"] .footer-links a:hover {
+  transform: translateX(-4px);
+}
+
+/* Timeline on Mobile */
+@media (max-width: 768px) {
+  [dir="rtl"] .timeline-track {
+    padding-left: 0;
+    padding-right: 16px;
+  }
+  [dir="rtl"] .timeline-track::before {
+    left: auto;
+    right: 44px;
+  }
+  [dir="rtl"] .timeline-step {
+    text-align: right;
+  }
+  [dir="rtl"] .benefit-item:nth-child(2) {
+    border-left: none;
+  }
+}
+
+/* Home 2 RTL Overrides */
+[dir="rtl"] .home2-hero-badge {
+  left: auto;
+  right: 24px;
+}
+[dir="rtl"] .material-col-badge {
+  right: auto;
+  left: 16px;
+}
+
+/* About Page RTL Overrides */
+[dir="rtl"] .about-craft-point {
+  border-left: none;
+  border-right: 3px solid var(--accent);
+  padding-left: 0;
+  padding-right: 20px;
+}
+[dir="rtl"] .about-craft-point:hover {
+  padding-left: 0;
+  padding-right: 26px;
+}
+
+/* Products Page RTL Overrides */
+[dir="rtl"] .product-spec-group-item {
+  border-left: none;
+  border-right: 3px solid var(--accent);
+}
+[dir="rtl"] .comparison-table {
+  text-align: right;
+}
+[dir="rtl"] .comparison-table th,
+[dir="rtl"] .comparison-table td {
+  border-right: none;
+  border-left: 1px solid var(--border);
+}
+[dir="rtl"] .comparison-table th:last-child,
+[dir="rtl"] .comparison-table td:last-child {
+  border-left: none;
+}
+
+/* Testimonials Page RTL Overrides */
+[dir="rtl"] .editorial-filter-label {
+  margin-right: 0;
+  margin-left: 8px;
+}
+[dir="rtl"] .editorial-story-row.reverse {
+  direction: ltr;
+}
+[dir="rtl"] .editorial-story-row.reverse > * {
+  direction: rtl;
+}
+[dir="rtl"] .featured-story-quote-mark {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+[dir="rtl"] .btn-editorial-link i,
+[dir="rtl"] .service-strip-link i {
+  transform: scaleX(-1);
+}
+[dir="rtl"] .trust-pillars-row {
+  text-align: right;
+}
+
